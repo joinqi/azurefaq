@@ -3,4 +3,5 @@
 
 ## 目录
 
-  * [虚拟机创建及管理](<documents/virtual-machine.md>)
+  * [虚拟机](<documents/virtual-machine.md>)
+  * [云服务](<documents/cloud-service.md>)

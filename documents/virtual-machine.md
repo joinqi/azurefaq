@@ -25,133 +25,25 @@
 >虚拟机按照不同规格,挂载的磁盘数量有限制,具体如下
 <table>
 <tbody><tr>
-<th>大小
-</th>
-<th>
-CPU 内核数
-</th>
-<th>
-内存
-</th>
-<th>
-最大数据磁盘数（每个磁盘 1 TB）
-</th> 
-</tr>
-<tr>
-<td>
-<strong>ExtraSmall</strong>
-</td>
-<td>
-共享
-</td>
-<td>
-768 MB
-</td> 
-<td>
-1
-</td>
-</tr>
-<tr>
-<td>
-<strong>Small</strong>
-</td>
-<td>
-1
-</td>
-<td>
-1.75 GB
-</td>
-<td>
-2
-</td>
-</tr>
-<tr>
-<td>
-<strong>Medium</strong>
-</td>
-<td>
-2
-</td>
-<td>
-3.5 GB
-</td>
-<td>
-4
-</td>
-</tr>
-<tr>
-<td>
-<strong>Large</strong>
-</td>
-<td>
-4
-</td>
-<td>
-7 GB
-</td>
-<td>
-8
-</td>
-</tr>
-<tr>
-<td>
-<strong>ExtraLarge</strong>
-</td>
-<td>
-8
-</td>
-<td>
-14 GB
-</td>
-<td>
-16
-</td>
-</tr>
-<tr>
-<td>
-<strong>A5</strong>
-</td>
-<td>
-2
-</td>
-<td>
-14 GB
-</td>
-<td>
-4
-</td>
-</tr>
-<tr>
-<td>
-<strong>A6</strong>
-</td>
-<td>
-4
-</td>
-<td>
-28 GB
-</td>
-<td>
-8
-</td>
-</tr>
-<tr>
-<td>
-<strong>A7</strong>
-</td>
-<td>
-8
-</td>
-<td>
-56 GB
-</td>
-<td>
-16
-</td>
-</tr>
+<th>大小</th><th>CPU 内核数</th><th>内存</th><th>最大数据磁盘数（每个磁盘 1 TB）</th></tr>
+<tr><td><strong>ExtraSmall</strong></td><td>共享</td><td>768 MB</td><td>1</td></tr>
+<tr><td><strong>Small</strong></td><td>1</td><td>1.75 GB</td><td>2</td></tr>
+<tr><td><strong>Medium</strong></td><td>2</td><td>3.5 GB</td><td>4</td></tr>
+<tr><td><strong>Large</strong></td><td>4</td><td>7 GB</td><td>8</td></tr>
+<tr><td><strong>ExtraLarge</strong></td><td>8</td><td>14 GB</td><td>16</td></tr>
+<tr><td><strong>A5</strong></td><td>2</td><td>14 GB</td><td>4</td></tr>
+<tr><td><strong>A6</strong></td><td>4</td><td>28 GB</td><td>8</td></tr>
+<tr><td><strong>A7</strong></td><td>8</td><td>56 GB</td><td>16</td></tr>
 </tbody></table>
+详细规格[链接](http://msdn.microsoft.com/zh-cn/library/windowsazure/dn197896.aspx)  
+
 #### 虚拟机临时存储是否收费?挂载的磁盘如何收费?
->Azure上所有的存储都是按照使用量收费,比如你挂载了 500 GB 的磁盘,只使用了 10 MB,只收 10 MB 的费用.
+>Azure上所有的存储都是按照使用量收费,比如你挂载了 500 GB 的磁盘,只使用了 10 MB,只收 10 MB 的费用.  
+
+#### 虚拟机的公网虚拟 IP 是固定的吗?
+>虚拟机的公网虚拟 IP 不是固定的,虚拟机重启或者重建后,Windows Azure都会重新分配公网虚拟 IP .应用系统应该用 DNS地址 代替 IP 配置 
+
+[返回首页](</index.md>)
 
 
 
