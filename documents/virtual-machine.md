@@ -24,150 +24,149 @@
 #### 虚拟机挂载磁盘有什么限制?
 >虚拟机按照不同规格,挂载的磁盘数量有限制,具体如下  
 <table>
-        <tbody><tr>
-          <th>
-                                大小
-                            </th>
-          <th>
-                                CPU 内核数
-                            </th>
-          <th>
-                                内存
-                            </th>
-          <th>
-                                最大数据磁盘数<br>（每个磁盘 1 TB）
-                            </th>
-         
-        </tr>
-        <tr>
-          <td>
-            <p>
-              <strong>ExtraSmall</strong>
-            </p>
-          </td>
-          <td>
-            <p>共享</p>
-          </td>
-          <td>
-            <p>768 MB</p>
-          </td>         
-          <td>
-            <p>1</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p>
-              <strong>Small</strong>
-            </p>
-          </td>
-          <td>
-            <p>1</p>
-          </td>
-          <td>
-            <p>1.75 GB</p>
-          </td>
-          <td>
-            <p>2</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p>
-              <strong>Medium</strong>
-            </p>
-          </td>
-          <td>
-            <p>2</p>
-          </td>
-          <td>
-            <p>3.5 GB</p>
-          </td>
-          <td>
-            <p>4</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p>
-              <strong>Large</strong>
-            </p>
-          </td>
-          <td>
-            <p>4</p>
-          </td>
-          <td>
-            <p>7 GB</p>
-          </td>
-          <td>
-            <p>8</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p>
-              <strong>ExtraLarge</strong>
-            </p>
-          </td>
-          <td>
-            <p>8</p>
-          </td>
-          <td>
-            <p>14 GB</p>
-          </td>
-          <td>
-            <p>16</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p>
-              <strong>A5</strong>
-            </p>
-          </td>
-          <td>
-            <p>2</p>
-          </td>
-          <td>
-            <p>14 GB</p>
-          </td>
-          <td>
-            <p>4</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p>
-              <strong>A6</strong>
-            </p>
-          </td>
-          <td>
-            <p>4</p>
-          </td>
-          <td>
-            <p>28 GB</p>
-          </td>
-          <td>
-            <p>8</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p>
-              <strong>A7</strong>
-            </p>
-          </td>
-          <td>
-            <p>8</p>
-          </td>
-          <td>
-            <p>56 GB</p>
-          </td>
-          <td>
-            <p>16</p>
-          </td>
-        </tr>
-      </tbody></table>
+<tbody><tr>
+<th>大小
+</th>
+<th>
+CPU 内核数
+</th>
+<th>
+内存
+</th>
+<th>
+最大数据磁盘数<br>（每个磁盘 1 TB）
+</th>
+ 
+</tr>
+<tr>
+<td>
+  <p>
+<strong>ExtraSmall</strong>
+  </p>
+</td>
+<td>
+  <p>共享</p>
+</td>
+<td>
+  <p>768 MB</p>
+</td> 
+<td>
+  <p>1</p>
+</td>
+</tr>
+<tr>
+<td>
+  <p>
+<strong>Small</strong>
+  </p>
+</td>
+<td>
+  <p>1</p>
+</td>
+<td>
+  <p>1.75 GB</p>
+</td>
+<td>
+  <p>2</p>
+</td>
+</tr>
+<tr>
+<td>
+  <p>
+<strong>Medium</strong>
+  </p>
+</td>
+<td>
+  <p>2</p>
+</td>
+<td>
+  <p>3.5 GB</p>
+</td>
+<td>
+  <p>4</p>
+</td>
+</tr>
+<tr>
+<td>
+  <p>
+<strong>Large</strong>
+  </p>
+</td>
+<td>
+  <p>4</p>
+</td>
+<td>
+  <p>7 GB</p>
+</td>
+<td>
+  <p>8</p>
+</td>
+</tr>
+<tr>
+<td>
+  <p>
+<strong>ExtraLarge</strong>
+  </p>
+</td>
+<td>
+  <p>8</p>
+</td>
+<td>
+  <p>14 GB</p>
+</td>
+<td>
+  <p>16</p>
+</td>
+</tr>
+<tr>
+<td>
+  <p>
+<strong>A5</strong>
+  </p>
+</td>
+<td>
+  <p>2</p>
+</td>
+<td>
+  <p>14 GB</p>
+</td>
+<td>
+  <p>4</p>
+</td>
+</tr>
+<tr>
+<td>
+  <p>
+<strong>A6</strong>
+  </p>
+</td>
+<td>
+  <p>4</p>
+</td>
+<td>
+  <p>28 GB</p>
+</td>
+<td>
+  <p>8</p>
+</td>
+</tr>
+<tr>
+<td>
+  <p>
+<strong>A7</strong>
+  </p>
+</td>
+<td>
+  <p>8</p>
+</td>
+<td>
+  <p>56 GB</p>
+</td>
+<td>
+  <p>16</p>
+</td>
+</tr>
+  </tbody></table>
 #### 虚拟机临时存储是否收费?挂载的磁盘如何收费?
 >Azure上所有的存储都是按照使用量收费,比如你挂载了 500 GB 的磁盘,只使用了 10 MB,只收 10 MB 的费用.
 
