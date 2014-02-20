@@ -23,7 +23,7 @@
 
 #### 虚拟机挂载磁盘有什么限制?
 >虚拟机按照不同规格,挂载的磁盘数量有限制,具体如下
- <table>
+<table>
  <tbody><tr>
  <th>大小</th><th>CPU 内核数</th><th>内存</th><th>最大数据磁盘数（每个磁盘 1 TB）</th></tr>
  <tr><td><strong>ExtraSmall</strong></td><td>共享</td><td>768 MB</td><td>1</td></tr>
