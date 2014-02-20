@@ -16,7 +16,7 @@
 ![](/images/vm-1.01.jpg)
 
 #### 虚拟机配置端点有限制吗?
->端点最大数量是150个,私有端口不建议修改.如果确实需要修改,虚拟机的防火墙要做对应的改动
+>端点最多可以建 *150* 个.没有特殊服务的私有端口建议不要修改.如果确实需要修改,虚拟机的防火墙或者系统要做对应的改动
 
 #### 多台虚拟机如何配置负载均衡?
 >虚拟机的负载均衡是通过端口检测完成。具体操作步骤见[对虚拟机进行负载平衡](http://windowsazure.cn/zh-cn/manage/linux/common-tasks/how-to-load-balance-virtual-machines/)
@@ -44,7 +44,7 @@
 >虚拟机的公网虚拟 IP 不是固定的,虚拟机重启或者重建后,Windows Azure都会重新分配公网虚拟 IP .应用系统应该用 DNS 地址 代替 IP 配置 
 
 #### 虚拟机运行过程中产生的网络流量和磁盘IO操作会另外计费吗?
->Windows Azure Mooncake 版本的网络流量和磁盘IO操作理论上是收费的.但是对 ENROLLMENT 有一个免费的用量数,超过这个用量数才会收费,并且收费标准和 International 也有区别,具体的价格需要参考 Windows Azure Mooncake 的公开报价.
+>Windows Azure Mooncake 版本的网络流量和磁盘IO操作理论上是*收费*的.但是对 ENROLLMENT 有一个免费的用量数,超过这个用量数才会收费,并且收费标准和 International 也有区别,具体的价格需要参考 Windows Azure Mooncake 的公开报价.
 
 [返回首页](</index.md>)
 
