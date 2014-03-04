@@ -61,6 +61,9 @@
 #### 同一个虚拟网络里在不配置公共端口的情况虚机是否可以互访？
 >可以互相访问，通过内部IP地址可以访问在同一个虚拟子网下的各个虚机。
 
+#### 如何突破Azure虚拟机单块磁盘容量上限？
+>可以采用Striping Volume to Data Disks的方式，具体步骤参考这篇[文档](https://www.simple-talk.com/cloud/infrastructure-as-a-service/windows-azure-virtual-machine-a-look-at-windows-azure-iaas-offerings-(part-2)/)
+
 [返回首页](</index.md>)
 
 
