@@ -64,6 +64,9 @@
 #### 如何突破Azure虚拟机单块磁盘容量上限？
 >可以采用Striping Volume to Data Disks的方式，具体步骤参考这篇[文档](https://www.simple-talk.com/cloud/infrastructure-as-a-service/windows-azure-virtual-machine-a-look-at-windows-azure-iaas-offerings-(part-2)/)
 
+#### 如何将Azure虚拟机配置为文件服务器并配置共享文件夹
+>请参考以下文档：[How to Configure a Windows Azure Virtual Machine File Server](http://blogs.msdn.com/b/philpenn/archive/2012/08/30/how-to-configure-a-windows-azure-virtual-machine-file-server-and-use-it-from-within-windows-hpc-server-compute-jobs.aspx)
+
 [返回首页](</index.md>)
 
 
