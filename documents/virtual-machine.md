@@ -70,6 +70,12 @@
 #### 如何将Azure虚拟机配置为FTP服务器？
 >请参考以下文档：[Hosting FTP on IIS 7.5 in a Windows Azure VM](http://itq.nl/walkthrough-hosting-ftp-on-iis-7-5-a-windows-azure-vm-2/)
 
+#### SQL Server License问题，在Azure上创建虚拟机后，如果自己安装SQL Server，License必须使用可以动的账号，如果使用普通的License出现问题的话，出现什么样的状况，微软不提供技术支持？
+>并非所有微软产品的license都可以在VM进行部署的，有的license只可以在物理服务器上进行部署，具体情况请查阅产品license文档，或者咨询相应的产品团队。尽量使用SQL Azure代替SQL Server，这样可以充分享受到Windows Azure PaaS所带来的好处，包括成本、扩展性，伸缩性。
+
+#### 关于99.95%运行保障，必须做到所有服务器均设置为双机同步备份，才能支持吗？如果只做了单机，发生故障。恢复时间是否有说明？
+>理论上只有在可用集里面的VM才可以达到99.95%的SLA，这也是微软官方推荐的做法。其实，对于Windows Azure而言，如果能忍受每1~2个月一次，每次1~2分钟的重启，那么，用户可以结合成本因素自行决定是否部署双机。对于使用VM的用户，需要特别注意一点，一定不要将重要数据保存在VM自带的数据盘上，例如Windows系统中的D盘。VM自带的数据盘会因VM重建或调整而丢失。正确的做法是在Storage中创建一个VHD，然后将VHD挂载到VM中作为磁盘使用，这样，即便VM挂掉了，数据也可以确保万无一失。
+
 [返回首页](</index.md>)
 
 
