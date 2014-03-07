@@ -66,6 +66,7 @@
     <tr>
         <td>SQL 数据库导入/导出服务映射端点</td>
         <td>1.中国东部：https://sh1prod-dacsvc.chinacloudapp.cn/dacwebservice.svc<br>2.中国北部：https://bj1prod-dacsvc.chinacloudapp.cn/dacwebservice.svc</td>
+        <td></td>
     </tr>
 </tbody>
 </table>
