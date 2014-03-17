@@ -7,7 +7,7 @@
 >Blob分为两种，块Blob和页Blob    
 ><ul>
 ><li>块Blob</li>
->块Blob最大可达200G。在上载块Blob时，小于64MB的文件可以被一次性写入。更大的文件是分Block上载的，每个Block最大可达4MB。一个Blob中最多可以包含50000个这样的Block。在所有Block上载后，需要上载一个Block列表以供存储服务把这些Block装配程一个完整的Blob。在上载的过程中可以并发上载多个Block，且不需要按顺序上载。所有上载的块都处于一种“未提交”的状态，知道进行提交操作。Block上载的时候，可以利用CloudBlockBlob类上的PubBlock方法来提交Block，然后用PutBlockList方法提交Block列表。
+>块Blob最大可达200G。在上载块Blob时，小于64MB的文件可以被一次性写入。更大的文件是分Block上载的，每个Block最大可达4MB。一个Blob中最多可以包含50000个这样的Block。在所有Block上载后，需要上载一个Block列表以供存储服务把这些Block装配程一个完整的Blob。在上载的过程中可以并发上载多个Block，且不需要按顺序上载。所有上载的块都处于一种“未提交”的状态，直到进行提交操作。Block上载的时候，可以利用CloudBlockBlob类上的PubBlock方法来提交Block，然后用PutBlockList方法提交Block列表。
 ><li>页Blob</li>
 >页Blob最大可以达到1TB。一个页Blob有多个512B的页构成，页Blob适用于随机读写操作。在创建一个页Blob时需要指定Blob能占用的最大空间。在读写时要按着512B的边界来进行。与块Blob不同，使用页Blob的所有的更新都是立即提交的，而不需要一个单独的提交操作。
 ></ul>

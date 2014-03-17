@@ -81,7 +81,7 @@
 #### Windows Service多用户登陆问题
 >在有网络端口限制的情况下，有可能需要配置Windows Server的多用户登陆即Remote Desktop Service，具体步骤请参见此[文档](http://blog.csdn.net/lanwilliam/article/details/6338493)
 
-#### 在虚拟机中自己关闭了虚拟机，Windows Azure还会收费吗？
+#### 远程登录到虚拟机操作系统中关闭了虚拟机，Windows Azure还会收费吗？
 >会，虽然虚拟机已经关闭了，但还是占用着 Windows Azure的内存，CPU资源。所以正确的做法应该是通过 Windows Azure 管理平台或 API 来关闭虚拟机。
 
 [返回首页](</index.md>)
