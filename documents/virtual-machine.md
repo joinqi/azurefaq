@@ -84,6 +84,9 @@
 #### 远程登录到虚拟机操作系统中关闭了虚拟机，Windows Azure还会收费吗？
 >会，虽然虚拟机已经关闭了，但还是占用着 Windows Azure的内存，CPU资源。所以正确的做法应该是通过 Windows Azure 管理平台或 API 来关闭虚拟机。
 
+#### 什么是Windows Azure可用性集？
+>Windows Azure可用性集是用来保证构建在Windows Azure虚拟机上的应用程序高可用性的一种机制。可以通过将虚拟机添加到可用性集中来获得这种能力。可用性集
+
 [返回首页](</index.md>)
 
 
