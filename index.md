@@ -7,3 +7,4 @@
   * [云服务](<documents/cloud-service.md>)
   * [存储](<documents/storage.md>)
   * [SQL Database](<documents/sql-database.md>)
+  * [Web 站点](<documents/web-site.md>)

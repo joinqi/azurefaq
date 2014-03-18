@@ -1,6 +1,9 @@
 # SQL Database
 
-#### SQL Database 怎么的数据库容量最大是多少
+#### 使用SQL Database的限制
+>SQL Database现在已知有如下限制、不支持分布式查询、不支持.NET CLR类型、不支持数据备份和恢复、需要每个表都有聚集索引。SQL Database提供两种不同类型的服务：web和business。web类型数据库最大尺寸为5GB，Business类型数据库最大尺寸为150GB。如果数据库超出了这个限制，需要使用数据分片功能将数据分布到多个SQL Database数据库上。
+
+#### SQL Database 的数据库容量最大是多少
 >SQL Database数据库分为Web版和Business版，两者的区别是Web版有两个容量大小选项，1GB和5GB。Business版有7个容量可供选择（10GB，20GB，30GB，40GB，50GB，100GB，150GB）
 
 #### SQL Database 怎么收费

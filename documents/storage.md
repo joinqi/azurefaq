@@ -1,15 +1,12 @@
 # 存储
 
-#### 使用SQL Database的限制
->SQL Database现在已知有如下限制、不支持分布式查询、不支持.NET CLR类型、不支持数据备份和恢复、需要每个表都有聚集索引。SQL Database提供两种不同类型的服务：web和business。web类型数据库最大尺寸为5GB，Business类型数据库最大尺寸为150GB。如果数据库超出了这个限制，需要使用数据分片功能将数据分不到多个SQL Database数据库上。
-
 #### 使用Blob的限制
->Blob分为两种，块Blob和页Blob    
+>Blob分为两种，区块Blob和页Blob    
 ><ul>
-><li>块Blob</li>
->块Blob最大可达200G。在上载块Blob时，小于64MB的文件可以被一次性写入。更大的文件是分Block上载的，每个Block最大可达4MB。一个Blob中最多可以包含50000个这样的Block。在所有Block上载后，需要上载一个Block列表以供存储服务把这些Block装配程一个完整的Blob。在上载的过程中可以并发上载多个Block，且不需要按顺序上载。所有上载的块都处于一种“未提交”的状态，直到进行提交操作。Block上载的时候，可以利用CloudBlockBlob类上的PubBlock方法来提交Block，然后用PutBlockList方法提交Block列表。
-><li>页Blob</li>
->页Blob最大可以达到1TB。一个页Blob有多个512B的页构成，页Blob适用于随机读写操作。在创建一个页Blob时需要指定Blob能占用的最大空间。在读写时要按着512B的边界来进行。与块Blob不同，使用页Blob的所有的更新都是立即提交的，而不需要一个单独的提交操作。
+><li>区块Blob</li>
+>这类的存储以4MB为一个区块单位，单一文件最大可以存储200GB，且区块不会连续存储，可能会打散到不同的存储服务器中存放，当应用程序要求时，会依照文件的Key以及区块由存储区提取数据。。在上载块Blob时，小于64MB的文件可以被一次性写入。更大的文件是分Block上载的，每个Block最大可达4MB。一个Blob中最多可以包含50000个这样的Block。在所有Block上载后，需要上载一个Block列表以供存储服务把这些Block装配程一个完整的Blob。在上载的过程中可以并发上载多个Block，且不需要按顺序上载。所有上载的块都处于一种“未提交”的状态，直到进行提交操作。Block上载的时候，可以利用CloudBlockBlob类上的PubBlock方法来提交Block，然后用PutBlockList方法提交Block列表。
+><li>标签页Blob</li>
+>页Blob最大可以达到1TB。会在存储区中划分一个连续的区域供应用程序存放数据,一个页Blob有多个512B的页构成，页Blob适用于随机读写操作。在创建一个页Blob时需要指定Blob能占用的最大空间。在读写时要按着512B的边界来进行。与块Blob不同，使用页Blob的所有的更新都是立即提交的，而不需要一个单独的提交操作。
 ></ul>
 
 #### 使用表的限制
