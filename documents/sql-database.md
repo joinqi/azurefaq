@@ -15,3 +15,11 @@
 
 #### SQL Database如何同本地SQL Server做数据同步
 >[TODO]
+
+#### 在Windows Azure虚拟机上配置SQL Server 2012 AlwaysOn
+>在IssS层面上，如果需要SQL Server的高可用，可以通过配置虚拟机中安装的SQL Server来实现。对于SQL Server 2008来说可以通过镜像的方式来实现HA。对于SQL Server 2012来说可以通过新添加的SQL Server AlwaysOn功能获得HA。SQL Server AlwaysOn功能可以通过下述几篇文章来学习配置。
+>[Step-By-Step: Creating a SQL Server 2012 AlwaysOn Availability Group](http://blogs.technet.com/b/canitpro/archive/2013/08/20/step-by-step-creating-a-sql-server-2012-alwayson-availability-group.aspx)
+>[Tutorial: AlwaysOn Availability Groups in Windows Azure (PowerShell)](http://msdn.microsoft.com/en-us/library/windowsazure/jj870963.aspx)
+>[High Availability and Disaster Recovery for SQL Server in Windows Azure Virtual Machines](http://msdn.microsoft.com/en-us/library/jj870962.aspx)
+
+[返回首页](</index.md>)
