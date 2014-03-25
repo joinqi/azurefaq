@@ -22,4 +22,7 @@
 >[Tutorial: AlwaysOn Availability Groups in Windows Azure (PowerShell)](http://msdn.microsoft.com/en-us/library/windowsazure/jj870963.aspx)
 >[High Availability and Disaster Recovery for SQL Server in Windows Azure Virtual Machines](http://msdn.microsoft.com/en-us/library/jj870962.aspx)
 
+#### Windows Azure SQL Database防火墙
+>在默认情况下，SQL Database数据库不允许从任何IP地址的链接。用户必须手动指定从哪些IP地址可以访问SQL Database。可以从SQL Database数据库的仪表板界面单击“管理允许的IP地址”来管理允许访问的IP地址。另外，“允许的服务”选项应该设置成“是”。这个选项允许用户所部署的云服务能访问这个数据库，无论他们的IP地址是什么。
+
 [返回首页](</index.md>)
