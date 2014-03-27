@@ -21,4 +21,9 @@
 >[Windows Azure Storage Redundancy Options and Read Access Geo Redundant Storage](http://blogs.msdn.com/b/windowsazurestorage/archive/2013/12/04/introducing-read-access-geo-replicated-storage-ra-grs-for-windows-azure-storage.aspx)
 >[Data Series: Introducing Locally Redundant Storage for Windows Azure Storage](http://blogs.msdn.com/b/windowsazure/archive/2012/06/08/introducing-locally-redundant-storage-for-windows-azure-storage.aspx)
 
+#### Azure存储控制
+>Windows Azure可以通过共享访问签名来将存储账户中的文件共享给其他用户而不用暴露出你的存储账户访问密钥。详细信息参见下面两篇文章。
+>[Shared Access Signatures, Part 1: Understanding the SAS Model](http://www.windowsazure.com/en-us/documentation/articles/storage-dotnet-shared-access-signature-part-1/?fb=zh-cn)
+>[Shared Access Signatures, Part 2: Create and Use a SAS with the Blob Service](http://www.windowsazure.com/en-us/documentation/articles/storage-dotnet-shared-access-signature-part-2/?fb=zh-cn)
+
 [返回首页](</index.md>)
