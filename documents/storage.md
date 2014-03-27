@@ -16,4 +16,9 @@
 >Windows Azure虚拟机中，操作系统磁盘和数据盘都有一个主机缓存选项，用来提升某些情况下应用的性能。默认情况下，对于数据磁盘的读写操作主机缓存都关闭的，而对于操作系统盘的读写操作的主机缓存都是开启的。
 >主机缓存是一个磁盘缓存，其中读缓存是写通过形式的磁盘缓存，读/写缓存是回写式的磁盘缓存。
 
+#### Azure存储冗余机制
+>Windows Azure包含三种存储冗余机制，包括本地冗余、地理冗余和处于预览阶段的读取访问地域冗余。默认每个Storage Account的冗余机制是地理冗余。详细内容可以参见下面两篇文章。
+>[Windows Azure Storage Redundancy Options and Read Access Geo Redundant Storage](http://blogs.msdn.com/b/windowsazurestorage/archive/2013/12/04/introducing-read-access-geo-replicated-storage-ra-grs-for-windows-azure-storage.aspx)
+>[Data Series: Introducing Locally Redundant Storage for Windows Azure Storage](http://blogs.msdn.com/b/windowsazure/archive/2012/06/08/introducing-locally-redundant-storage-for-windows-azure-storage.aspx)
+
 [返回首页](</index.md>)
