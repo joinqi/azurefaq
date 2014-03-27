@@ -90,6 +90,9 @@
 Windows Azure会定期的对运行应用程式实例的操作系统进行升级，在升级操作进行时虚拟机会被停机。更新域就是用来保证在进行更新操作时，同一时间不是所有的虚拟机实例进行升级。当多台虚拟机添加到可用性集中时，Windows Azure会保证将这些机器添加到不同的更新域中。上面的图展示了两台在不同更新域中运行着IIS的服务器和两台运行着SQL Server的服务器。
 同时你也可以综合利用可用性集和负载均衡来保证应用程序的高可用和运行性能。
 
+#### Windows Azure访问控制列表
+>在Windows Azure中我们可以通过访问控制列表来提升在Azure上部署应用的安全性。访问控制列表提供了对虚拟机端口选择性许可与禁用的能力。可用通过Azure门户中的虚拟机端口管理界面下进行调整控制。详细信息可以参考如下文章，[About Network Access Control Lists (ACLs)](http://msdn.microsoft.com/en-us/library/windowsazure/dn376541.aspx)
+
 [返回首页](</index.md>)
 
 
