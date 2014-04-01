@@ -12,4 +12,18 @@
 #### 使用表的限制
 >Azure中表存储服务中表（Table）是一个实体的集合。与传统数据库不同，存储服务表没有固定的结构，也就是说可以在同一张表内存入含有不同字段的记录。实体是一个属性的集合，类似于关系数据库中的一行记录。一个实体最大可达1MB。属性是一个键-值对。每个实体可以最多有252个属性。每个实体有个3个系统保留属性，分别是分区键、行健和时间戳。位于同一分区的实体可以作为一个原子操作来插入或查询。每个分区内的行健必须是唯一的。
 
+#### Windows Azure主机缓存
+>Windows Azure虚拟机中，操作系统磁盘和数据盘都有一个主机缓存选项，用来提升某些情况下应用的性能。默认情况下，对于数据磁盘的读写操作主机缓存都关闭的，而对于操作系统盘的读写操作的主机缓存都是开启的。
+>主机缓存是一个磁盘缓存，其中读缓存是写通过形式的磁盘缓存，读/写缓存是回写式的磁盘缓存。
+
+#### Azure存储冗余机制
+>Windows Azure包含三种存储冗余机制，包括本地冗余、地理冗余和处于预览阶段的读取访问地域冗余。默认每个Storage Account的冗余机制是地理冗余。详细内容可以参见下面两篇文章。
+>[Windows Azure Storage Redundancy Options and Read Access Geo Redundant Storage](http://blogs.msdn.com/b/windowsazurestorage/archive/2013/12/04/introducing-read-access-geo-replicated-storage-ra-grs-for-windows-azure-storage.aspx)
+>[Data Series: Introducing Locally Redundant Storage for Windows Azure Storage](http://blogs.msdn.com/b/windowsazure/archive/2012/06/08/introducing-locally-redundant-storage-for-windows-azure-storage.aspx)
+
+#### Azure存储控制
+>Windows Azure可以通过共享访问签名来将存储账户中的文件共享给其他用户而不用暴露出你的存储账户访问密钥。详细信息参见下面两篇文章。
+>[Shared Access Signatures, Part 1: Understanding the SAS Model](http://www.windowsazure.com/en-us/documentation/articles/storage-dotnet-shared-access-signature-part-1/?fb=zh-cn)
+>[Shared Access Signatures, Part 2: Create and Use a SAS with the Blob Service](http://www.windowsazure.com/en-us/documentation/articles/storage-dotnet-shared-access-signature-part-2/?fb=zh-cn)
+
 [返回首页](</index.md>)
