@@ -72,7 +72,7 @@
 </table>
 
 
-###VS2012发布遇到无法上传的问题
+####VS2012发布遇到无法上传的问题
 >当使用VS工具发布Cloud Service时，需要注意当前Cloud Service绑定的Subscription必须存在。VS会保存一个Subscription的profile，当你删除这个Subscription而没有更新profile，你就会发现那个删除的Subscription仍然能被勾选。如果你选了这个Subscription去发布，发布虽能成功，但是在管理界面下查看，实际你的Cloud Service是绑定的一个当前存在的Subscription而不是VS里勾选的那个删除的Subscription。
 注：将错就错，当你已经用删除的Subscription发布了一个Cloud Service，而且想把它更新成https的访问形式，那么原来Subscription所需的证书都需要上传，不然更新发布会出错。不建议使用这种方法去发布！
 
