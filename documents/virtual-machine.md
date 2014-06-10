@@ -93,4 +93,10 @@ Windows Azure会定期的对运行应用程式实例的操作系统进行升级�
 #### Windows Azure访问控制列表
 >在Windows Azure中我们可以通过访问控制列表来提升在Azure上部署应用的安全性。访问控制列表提供了对虚拟机端口选择性许可与禁用的能力。可用通过Azure门户中的虚拟机端口管理界面下进行调整控制。详细信息可以参考如下文章，[About Network Access Control Lists (ACLs)](http://msdn.microsoft.com/en-us/library/windowsazure/dn376541.aspx)
 
+#### 如何在本地连接Azure VM上的SQL Server
+>1. 首先在Azure管理界面上将安装好SQL Server的虚拟机的1433端口打开
+>2. 登陆Azure虚拟机，打开防火墙设置，在Inbound规则中添加1433端口
+>3. 在本地机器不加入Azure虚拟网络的情况下，如果Azure虚拟机上安装的SQL Server采用Windows认证，请将SQL Server登陆认证方式调整为混合登陆认证模式，并设置相应的用户与登陆密码
+>4. 本地SSMS通过使用Azure虚拟机的DNS地址并使用混合登陆模式对虚拟机上的SQL Server进行访问
+
 [返回首页](</index.md>)
